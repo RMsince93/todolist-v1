@@ -94,3 +94,9 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
+a {
+  color: black;
+  font-family: 'Merriweather', serif;
+  padding: 20px;
+}
