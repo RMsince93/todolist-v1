@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>To Do List</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-
-
-<body>
+<%- include("header") -%>
 
   <div class="box" id="heading">
-    <h1> <%= kindOfDay %> </h1>
+    <h1> <%= listTitle %> </h1>
   </div>
 
   <div class="box">
@@ -22,16 +12,9 @@
     </div>
     <% } %>
     <form class="item" action="/" method="post">
-      <input type="text" name="newItem" placeholder="Nova Tarefa" autocomplete="off">
-      <button type="submit" name="button">+</button>
+      <input type="text" name="newItem" placeholder="New Task" autocomplete="off">
+      <button type="submit" name="list" value=<%= listTitle %>>+</button>
     </form>
   </div>
 
-
-</body>
-
-<footer>
-  <a href=https://rmsince93.github.io/RMsince93/ target="_blank"> © 2022 Rafael Martins</a>
-</footer>
-
-</html>
+<%- include("footer") -%>
